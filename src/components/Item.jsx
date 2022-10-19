@@ -1,10 +1,11 @@
 import AddToCart from './AddToCart';
+import ImagenProduct from './ImagenProduct';
 const Item = ({infoproductos,guardarProducto, producto, productoCart, guardarProductoAlCarro, cantidadProductosCarro, guardarCantidad}) => {
 	return (
 		<ul className='ul'>
 			<div className='listItem'>
 			<li className='list'>
-				<img className='img' src={producto.imagen}></img>
+				<ImagenProduct producto={producto}/>
 				<ul>{producto.productName}</ul>
 				<ul>${producto.valor}</ul>
 				<AddToCart

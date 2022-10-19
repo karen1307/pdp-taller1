@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import './App.css';
-
+import './App.css'; // se importan los estilos 
+// Se importan los componentes 
 import Header from './components/Header';
 import Producto from './components/Producto';
 import Summary from './components/Summary';
 import ShoppingCart from './components/ShoppingCart';
+
 const App = () => {
 	const [cantidadProductosCarro, guardarCantidad] = useState(0);
 	const [couponCode, setCouponCode] = useState(0);

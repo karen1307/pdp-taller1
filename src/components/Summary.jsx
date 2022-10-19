@@ -7,7 +7,7 @@ const Summary = ({
 		setCouponCode(target.value);
 	};
 	const totalPrecioProducto = productoCart
-	.reduce( (valor,current)=> valor+current.valor,0)
+	.reduce( (valor,current)=> valor+(current.valor*current.cantidad),0)
 
 	return (
 		<div>
